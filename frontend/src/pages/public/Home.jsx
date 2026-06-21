@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { getProducts, getCategories } from '../../api/products';
 import ProductGrid from '../../components/product/ProductGrid';
 import Button from '../../components/ui/Button';
+import PromoBanner from '../../components/shared/PromoBanner';
 import { Search } from 'lucide-react';
 
 const Home = () => {
@@ -56,6 +57,8 @@ const Home = () => {
           </Button>
         </div>
       </div>
+
+      <PromoBanner />
 
       {/* Catégories */}
       <div className="px-4 py-6 max-w-6xl mx-auto">
